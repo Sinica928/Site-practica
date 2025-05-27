@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Store România</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Apple Store România</h1>
+    <nav>
+      <a href="#" onclick="showSection('home')">Acasă</a>
+      <a href="#" onclick="showSection('login')">Login</a>
+      <a href="#" onclick="showSection('register')">Înregistrare</a>
+    </nav>
+  </header>
+
+  <!-- Acasă -->
+  <section id="home-section" class="section">
+    <h2>Produsele noastre</h2>
+    <div class="products">
+
+      <div class="product">
+        <img src="https://www.apple.com/v/iphone-15-pro/b/images/meta/iphone-15-pro_overview__f8jz7aagka2q_og.png" alt="iPhone 15 Pro" />
+        <h3>iPhone 15 Pro</h3>
+        <p>Realizat din titan de calitate aerospațială. Cu cipul revoluționar A17 Pro. Putere de neegalat într-un design ușor și elegant.</p>
+      </div>
+
+      <div class="product">
+        <img src="https://darwin.md/media/525048/conversions/husa-pentru-laptop-tech-protect-smartshell-for-macbook-air-13-2018-2020-133-black-210765-preview-webp.png" alt="MacBook Pro" />
+        <h3>MacBook Pro</h3>
+        <p>MacBook Pro cu cip M3, M3 Pro sau M3 Max oferă performanță incredibilă pentru dezvoltatori, creatori de conținut și profesioniști.</p>
+      </div>
+
+      <div class="product">
+        <img src="https://darwin.md/media/454925/conversions/darwin-tableta-apple-ipad-2021-3-gb-64-gb-wi-fi-gray-mk2k3rk-a-058-preview-webp.png" alt="iPad Pro" />
+        <h3>iPad Pro</h3>
+        <p>Cu cipul M2, iPad Pro este cel mai avansat iPad creat vreodată. Subțire, rapid și gata de orice provocare.</p>
+      </div>
+
+      <div class="product">
+        <img src="https://darwin.md/media/563479/conversions/darwin-ceas-inteligent-apple-watch-series-9-silver-314089-preview-webp.png" alt="Apple Watch Series 9" />
+        <h3>Apple Watch Series 9</h3>
+        <p>Monitorizează sănătatea, antrenează-te și rămâi conectat cu ceasul tău inteligent, acum cu gesturi tactile și performanță îmbunătățită.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Login -->
+  <section id="login-section" class="section hidden">
+    <h2>Autentificare</h2>
+    <form onsubmit="login(event)">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Parolă" required />
+      <button type="submit">Conectează-te</button>
+    </form>
+  </section>
+
+  <!-- Register -->
+  <section id="register-section" class="section hidden">
+    <h2>Înregistrare</h2>
+    <form onsubmit="register(event)">
+      <input type="text" placeholder="Nume complet" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Parolă" required />
+      <button type="submit">Înregistrează-te</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Apple Store România
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
